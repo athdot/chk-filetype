@@ -1,7 +1,299 @@
 <script>
+var runthroughs = 0
+var wordlength = 1
 var info = window.location.href
 var infonourl = info.substring(45,info.length)
-var seperatenumeral = infonourl.length
+var characters = infonourl
+var wordlength = characters.length
+while(runthroughs < wordlength){
+var part = characters.substring(runthroughs,runthroughs + 2)
+if(part === "sT"){
+var letterz = ("a")
+}
+if(part === "p2"){
+var letterz = ("b")
+}
+if(part === "9v"){
+var letterz = ("c")
+}
+if(part === "ab"){
+var letterz = ("d")
+}
+if(part === "mN"){
+var letterz = ("e")
+}
+if(part === "Mn"){
+var letterz = ("f")
+}
+if(part === "nM"){
+var letterz = ("g")
+}
+if(part === "Nm"){
+var letterz = ("h")
+}
+if(part === "QQ"){
+var letterz = ("i")
+}
+if(part === "ba"){
+var letterz = ("j")
+}
+if(part === "bB"){
+var letterz = ("k")
+}
+if(part === "Be"){
+var letterz = ("l")
+}
+if(part === "ZZ"){
+var letterz = ("m")
+}
+if(part === "zz"){
+var letterz = ("n")
+}
+if(part === "PP"){
+var letterz = ("o")
+}
+if(part === "mL"){
+var letterz = ("p")
+}
+if(part === "FF"){
+var letterz = ("q")
+}
+if(part === "cc"){
+var letterz = ("r")
+}
+if(part === "Qu"){
+var letterz = ("s")
+}
+if(part === "SP"){
+var letterz = ("t")
+}
+if(part === "AY"){
+var letterz = ("u")
+}
+if(part === "SL"){
+var letterz = ("v")
+}
+if(part === "PL"){
+var letterz = ("w")
+}
+if(part === "LS"){
+var letterz = ("x")
+}
+if(part === "UU"){
+var letterz = ("y")
+}
+if(part === "PU"){
+var letterz = ("z")
+}
+if(part === "qQ"){
+var letterz = (" ")
+}
+if(part === "CQ"){
+var letterz = ("A")
+}
+if(part === "CW"){
+var letterz = ("B")
+}
+if(part === "CE"){
+var letterz = ("C")
+}
+if(part === "CR"){
+var letterz = ("d")
+}
+if(part === "CT"){
+var letterz = ("E")
+}
+if(part === "CY"){
+var letterz = ("F")
+}
+if(part === "CU"){
+var letterz = ("G")
+}
+if(part === "wH"){
+var letterz = ("H")
+}
+if(part === "CI"){
+var letterz = ("I")
+}
+if(part === "Ci"){
+var letterz = ("J")
+}
+if(part === "Co"){
+var letterz = ("K")
+}
+if(part === "cO"){
+var letterz = ("L")
+}
+if(part === "0c"){
+var letterz = ("M")
+}
+if(part === "c0"){
+var letterz = ("N")
+}
+if(part === "cv"){
+var letterz = ("O")
+}
+if(part === "Vc"){
+var letterz = ("P")
+}
+if(part === "Ec"){
+var letterz = ("Q")
+}
+if(part === "QM"){
+var letterz = ("R")
+}
+if(part === "mQ"){
+var letterz = ("S")
+}
+if(part === "br"){
+var letterz = ("T")
+}
+if(part === "rb"){
+var letterz = ("U")
+}
+if(part === "Ks"){
+var letterz = ("V")
+}
+if(part === "sK"){
+var letterz = ("W")
+}
+if(part === "Kw"){
+var letterz = ("X")
+}
+if(part === "wK"){
+var letterz = ("Y")
+}
+if(part === "bA"){
+var letterz = ("Z")
+}
+//Punctuation
+
+if(part === "zp"){
+var letterz = ("/")
+}
+if(part === "qm"){
+var letterz = (".")
+}
+if(part === "QK"){
+var letterz = ("?")
+}
+if(part === "Qp"){
+var letterz = (",")
+}
+if(part === " mq"){
+var letterz = ('<')
+}
+if(part === " Wy"){
+var letterz = ('>')
+}
+if(part === "yW"){
+var letterz = (":")
+}
+if(part === "sU"){
+var letterz = (";")
+}
+if(part === "wZ"){
+var letterz = ("'")
+}
+if(part === "qS"){
+var letterz = ("[")
+}
+if(part === "nE"){
+var letterz = ("]")
+}
+if(part === "iO"){
+var letterz = ("{")
+}
+if(part === "Oi"){
+var letterz = ("}")
+}
+if(part === "QB"){
+var letterz = ("|")
+}
+if(part === "se"){
+var letterz = ("!")
+}
+if(part === "su"){
+var letterz = ("@")
+}
+if(part === "sM"){
+var letterz = ("#")
+}
+if(part === "SC"){
+var letterz = ("?")
+}
+if(part === "qn"){
+var letterz = ("%")
+}
+if(part === "Eq"){
+var letterz = ("^")
+}
+if(part === "Da"){
+var letterz = ("*")
+}
+if(part === "cq"){
+var letterz = ("(")
+}
+if(part === "Qd"){
+var letterz = (")")
+}
+if(part === "uE"){
+var letterz = ("-")
+}
+if(part === "pN"){
+var letterz = ("_")
+}
+if(part === "Aq"){
+var letterz = ("+")
+}
+if(part === "Q0"){
+var letterz = ("=")
+}
+if(part === "IO"){
+var letterz = ("~")
+}
+if(part === "io"){
+var letterz = ("`")
+}
+//Numbers
+
+if(part === "Zc"){
+var letterz = ("1")
+}
+if(part === "Ac"){
+var letterz = ("2")
+}
+if(part === "eD"){
+var letterz = ("3")
+}
+if(part === "s6"){
+var letterz = ("4")
+}
+if(part === "Ps"){
+var letterz = ("5")
+}
+if(part === "sp"){
+var letterz = ("6")
+}
+if(part === "ps"){
+var letterz = ("7")
+}
+if(part === "zs"){
+var letterz = ("8")
+}
+if(part === "yu"){
+var letterz = ("9")
+}
+if(part === "pO"){
+var letterz = ("0")
+}
+//Here it is
+var runthroughs = (runthroughs + 2)
+var sent = sent + letterz
+}
+var dun = sent.substring(9,sent.length);
+var infonourl = dun;
+var seperatenumeral = infonourl.length;
 var check = 0
 var hyphencheck = 1
 while(seperatenumeral>check){
@@ -23,7 +315,5 @@ while(seperatenumeral>check){
   }
   var check = check+1
 }
-document.write("Title: " + title)
-  document.write("Description: " + descript)
-  document.write( "Content: " + content)
+document.write("Title: " + title + ". Description: " + descript + ". Content: " + content)
 </script>
