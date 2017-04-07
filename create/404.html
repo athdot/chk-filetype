@@ -1,0 +1,25 @@
+<script>
+var info = window.location.href
+var infonourl = info.substring(45,info.length)
+var speratenumeral = infonourl.length
+var check = 0
+var hyphencheck = 0
+while(seperatenumeral>check){
+if(infonourl.substring(check,check+1) === "-"){
+//Filers
+if(hyphencheck == 0){
+var hyphencheck = 1
+var title = infonourl.substring(0,check)
+var destart = title.length
+}else if(hyphencheck == 1){
+var hyphencheck = 2
+var descript = infonourl.substring(destart+1,check)
+var contart = descript.length
+}else if(hyphencheck == 2){
+var content = infonourl.substring(contart+1,infonourl.length)
+}
+//end
+}
+}
+alert("Title: " + title + ". Content: " + descript + ". Content: " + content)
+</script>
