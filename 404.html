@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Decrypting...</title>
+  </head>
+  <body>
 <script>
 var runthroughs = 0
 var wordlength = 1
@@ -315,10 +321,12 @@ while(seperatenumeral>check){
   }
   var check = check+1
 }
-  document.getElementById('title').innerHTML = "Title: " + title;
-  document.getElementById('descript').innerHTML = "Description: " + descript;
-document.getElementById('content').innerHTML = "Contents: " + content;
+  document.getElementById('title').innerHTML = ("Title: " + title);
+  document.getElementById('descript').innerHTML = ("Description: " + descript);
+document.getElementById('content').innerHTML = ("Contents: " + content);
 </script>
 <p id="title"></p>
 <p id="descript"></p>
 <p id="content"></p>
+  </body>
+</html>
