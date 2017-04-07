@@ -3,24 +3,24 @@ var info = window.location.href
 var infonourl = info.substring(45,info.length)
 var seperatenumeral = infonourl.length
 var check = 0
-var hyphencheck = 0
+var hyphencheck = 1
 while(seperatenumeral>check){
   if(infonourl.substring(check,check+1) === "-"){
     //Filers
-    if(hyphencheck == 0){
-      var hyphencheck = 1
+    if(hyphencheck == 1){
+      var hyphencheck = 2
       var title = infonourl.substring(0,check)
       var destart = title.length
-    }else if(hyphencheck == 1){
-      var hyphencheck = 2
+    }else if(hyphencheck == 2){
+      var hyphencheck = 3
       var descript = infonourl.substring(destart+1,check)
       var cont = title.length
-    }else if(hyphencheck == 2){
+    }else if(hyphencheck == 3){
       var content = infonourl.substring(cont+1,infonourl.length)
     }
     //end
   }
   var check = check+1
 }
-alert("Title: " + title + ". Content: " + descript + ". Content: " + content)
+alert("Title: " + title + ". Description: " + descript + ". Content: " + content)
 </script>
